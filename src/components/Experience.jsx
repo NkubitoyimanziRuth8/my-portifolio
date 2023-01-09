@@ -3,6 +3,8 @@ import img5 from "../images/react.jpg"
 import img6  from "../images/css.jpg"
 import img7  from "../images/tail.jpg"
 import img8  from "../images/js.png"
+import img9  from "../images/html.jpg"
+import img10  from "../images/github.jpg"
 
 const Experience = () => {
     const techs = [
@@ -34,10 +36,24 @@ const Experience = () => {
             style:'shadow-blue-500'
 
         },
+        {
+            id:5,
+            src:img9,
+            title:'html',
+            style:'shadow-blue-500'
+
+        },
+        {
+            id:6,
+            src:img10,
+            title:'guithub',
+            style:'shadow-blue-500'
+
+        },
     ]
   return (
     <div name="experience" className="bg-gradient-to-b from-gray-800 to-black w-full
-     h-screen"
+     h-screen top-[70%] pt-40"
      >
         <div className="max-w-screen-lg mx-auto p-4 flex flex-col
         justfy-center w-full h-full text-white">
@@ -50,7 +66,7 @@ const Experience = () => {
                      techs.map(({id,src,title,style})=>(
                         <div key={id}className={`shadow-md hover:scale-105 duration-500 py-2 round-lg ${style}`}>
                     
-                   <img src={img5} alt=""   className="w-20 mx-auto"/> 
+                   <img src={src} alt=""   className="w-20 mx-auto"/> 
                    <p className="mt-4">{title}</p>
                 </div>
                      ))

@@ -13,7 +13,7 @@ const SocialLinks = () => {
                 </>
             ),
             href: "https://linkedin.com",
-            style:'rounded-tr-md'
+            style:'rounded-full'
         },
         {
             id:2,
@@ -22,8 +22,8 @@ const SocialLinks = () => {
                 Github < FaGithub size={30} />
                 </>
             ),
-            href: "https://linkedin.com",
-            style:'rounded-tr-md'
+            href: "https://github.com/NkubitoyimanziRuth8",
+            style:'rounded-full'
         },
         {
             id:3,
@@ -33,7 +33,7 @@ const SocialLinks = () => {
                 </>
             ),
             href: "https://linkedin.com",
-            style:'rounded-tr-md'
+            style:'rounded-full'
         },
         {
             id:1,
@@ -43,17 +43,19 @@ const SocialLinks = () => {
                 </>
             ),
             href: "resume.pdf",
-            style:'rounded-rr-md',
+            style:'rounded-full',
             download: true,
         }
     ]
   return (
-    <div className=" hidden lg:flex flex-col top-[35%] left-0 fixed">
+    <div className="hidden md:flex flex-row top-[35%] fixed">
         <ul>
             {links.map(({id,child,href,style,download})=>(
                   <li 
                   key={id} 
-                  className={`flex flex-row justify-between items-center w-40 h-14  px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500 $ style`}>
+                  className={` justify-between items-center w-40 rounded-full
+                   h-14  px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-full
+                    duration-300 bg-gray-500 $ style`}>
                  
                    
                       <a
